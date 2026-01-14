@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>9주차 출석 과제</title>
+        <script src="./20201023_1.js">
+            // function over(obj) {
+            //     obj.src="./picture/naver.png"
+            // }b
+            // function out(obj) {
+            //     obj.src="./picture/google.png"
+            // }
+        </script>
+    </head>
+    <body>
+        <h2>예제 6-1</h2>
+        <hr>
+        <img src="./picture/google.png" width="300px" alt="image" onmouseover="this.src='./picture/naver.png'" onmouseout="this.src='./picture/google.png'">
+        <h2>예제 6-2</h2>
+        <hr>
+        <img src="./picture/google.png" width="300px" alt="image" onmouseover="over(this)" onmouseout="out(this)">
+        <h2>예제 6-3</h2>
+        <hr>
+        <img src="./picture/google.png" width="300px" alt="image" onmouseover="over(this)" onmouseout="out(this)">
+        <h2>예제 6-4</h2>
+        <hr>
+        <a href="javascript:alert('alert창입니다.')">URL부분에 자바스크립트 작성</a><br><br><br>
+        <h2>예제 6-6</h2>
+        <hr>
+        <script>
+            var x = 100; //전역변수
+            
+            function f() {
+                var x = 1; //지역 변수
+                document.write("지역변수 x=" + x);
+                document.write("<br>");
+                document.write("전역변수 x=" + this.x);
+            }
+            f();
+        </script>
+        <h2>예제 6-16</h2>
+        <hr>
+        <script>
+            var price = 0;
+            var coffee = prompt("무슨 커피 드릴까요?", "");
+            switch(coffee) {
+                case "espresso":
+                case "에스프레소" : price = 2000;
+                    break;
+                case "카푸치노" : price = 3000;
+                    break;
+                case "카페라떼" : price = 3500;
+                    break;
+                default:
+                    document.write(coffee + "는 없습니다.");
+            }
+            if(price != 0) {
+                document.write(coffee + "는 " + price + "원입니다.");
+            }
+        </script>
+        <h2>예제 6-18</h2>
+        <hr>
+        <script>
+            var intnum = parseInt(prompt("0보다 큰 정수를 입력하세요", ""));
+            var sum = 0;
+
+            for(var i=0; i<=intnum; i++) {
+                sum += i;
+            }
+            document.write("0에서 " + intnum + "까지 합은 " + sum);
+
+        </script>
+        <h2>예제 6-24</h2>
+        <hr>
+        <script>
+            var input_num = parseInt(prompt("구구단 몇 단을 원하세요", ""));
+            for(var i=0; i<9; i++) {
+                document.write(input_num+"x"+(i+1)+"="+input_num*(i+1)+"<br>");
+            }
+        </script>
+    </body>
+</html>
