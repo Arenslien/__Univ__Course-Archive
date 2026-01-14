@@ -13,7 +13,7 @@
 
 ---
 
-# 🎓 학부 성적 (Undergraduate Academic Records)
+### 🎓 학부 성적 (Undergraduate Academic Records)
 
 명지대학교 학부 과정 동안의 학술 성과 및 전공 이수 내역을 기록한 섹션입니다.
 
